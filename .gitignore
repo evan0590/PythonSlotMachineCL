@@ -1,6 +1,10 @@
 # Additional ignores
 .DS_Store
-.idea
+# Config Files
+*.ini
+
+# PyCharm Related Files
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
