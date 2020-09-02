@@ -1,5 +1,5 @@
-from Python.slotmachine.purse import Purse
-from Python.slotmachine.slot_machine import Slot
+from slotmachine.purse import Purse
+from slotmachine.slot_machine import Slot
 
 
 def main():

@@ -5,7 +5,7 @@ requirements = [
 ]
 
 setup(name="slotmachine",
-      version="0.4",
+      version="0.1",
       description="Basic command line slot machine.",
       url="https://github.com/evan0590/SlotMachinesCL",
       author="Evan Byrnes",

@@ -1,5 +1,6 @@
 import emoji
 from random import choice
+
 faces = [emoji.emojize(":red_apple:"),
          emoji.emojize(":pear:"),
          emoji.emojize(":tangerine:")]
