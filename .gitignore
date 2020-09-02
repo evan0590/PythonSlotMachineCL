@@ -6,6 +6,9 @@
 # PyCharm Related Files
 .idea/
 
+# VSCode Related Files
+.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
