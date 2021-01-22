@@ -21,10 +21,7 @@ def main():
         # The player is asked to place a bet.
         bet = input("How much do you bet: ")
         # The player has the option to quit the game by typing 'N'.
-        if bet == "N":
-            print("You typed 'N' - Thank you for playing.")
-            break
-        elif bet == "n":
+        if bet == "N" or bet == "n":
             print("You typed 'N' - Thank you for playing.")
             break
         else:
@@ -47,20 +44,22 @@ def main():
                     wallet.debit(gamble)
                     machine.pull_handle()
                     machine.show_slot()
-                    wallet.credit(machine.score_slot(bet))
+                    wallet.credit(machine.score_slot(gamble))
+                    print("hi im bet!", bet)
+                    print("hi im gamble!", gamble)
                     # Display, using string formatting,
                     # available funds with two
                     # digits after the decimal place.
                     funds_format = format(wallet.funds, '.2f')
                     # Player cannot continue if funds are below 2.
                     if wallet.funds < 2:
-                        print("You score", machine.score_slot(bet), "- Thank you for playing.")
+                        print("You score", machine.score_slot(gamble), "- Thank you for playing.")
                         print("You are leaving with ", funds_format, ".", sep='')
                     # Player loses bet.
-                    elif machine.score_slot(bet) == 0:
-                        print("You score", machine.score_slot(bet), "- you have", funds_format)
+                    elif machine.score_slot(gamble) == 0:
+                        print("You score", machine.score_slot(gamble), "- you have", funds_format)
                     else:
-                        print("You score", machine.score_slot(bet), "- you have", funds_format)
+                        print("You score", machine.score_slot(gamble), "- you have", funds_format)
 
 
 if __name__ == '__main__':
